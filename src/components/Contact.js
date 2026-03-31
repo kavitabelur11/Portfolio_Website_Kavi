@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import "./styles/Contact.css";
+const Contact = () => {
+    return (_jsx("div", { className: "contact-section section-container", id: "contact", children: _jsxs("div", { className: "contact-container", children: [_jsx("h3", { children: "Contact" }), _jsxs("div", { className: "contact-flex", children: [_jsxs("div", { className: "contact-box", children: [_jsx("h4", { children: "Email" }), _jsx("p", { children: _jsx("a", { href: "mailto:kavita.nadlamani@ue-germany.de", "data-cursor": "disable", children: "kavita.nadlamani@ue-germany.de" }) }), _jsx("div", { style: { paddingBottom: "30px" } })] }), _jsxs("div", { className: "contact-box", children: [_jsx("h4", { children: "Location" }), _jsxs("p", { style: { marginBottom: "20px" }, children: ["Spandau, Berlin", _jsx("br", {}), "Germany"] }), _jsx("h4", { children: "Social" }), _jsxs("a", { href: "https://linkedin.com/in/kavita-n-991132119", target: "_blank", "data-cursor": "disable", className: "contact-social", children: ["Linkedin ", _jsx(MdArrowOutward, {})] })] }), _jsxs("div", { className: "contact-box", children: [_jsxs("h2", { children: ["Designed and Developed ", _jsx("br", {}), " by ", _jsx("span", { children: "Kavita Nadlamani" })] }), _jsxs("h5", { children: [_jsx(MdCopyright, {}), " 2026"] })] })] })] }) }));
+};
+export default Contact;

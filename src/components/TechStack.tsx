@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { useRef, useMemo, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Environment } from "@react-three/drei";
 import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import {
@@ -13,14 +14,22 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
+  "/images/Appium.webp",
+  "/images/Cucumber.webp",
+  "/images/Jenkins.webp",
+  "/images/kibana.webp",
+  "/images/Kubernetes.webp",
   "/images/mysql.webp",
   "/images/typescript.webp",
   "/images/javascript.webp",
+  "/images/Java.webp",
+  "/images/Playwright.webp",
+  "/images/Postman.webp",
+  "/images/rabbitmq.webp",
+  "/images/REstAssured.webp",
+  "/images/SpringBoot.webp",
+  "/images/images.webp",
+
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -128,6 +137,9 @@ const TechStack = () => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
+    // Force GSAP to recalculate spacing now that this heavy component has mounted
+    ScrollTrigger.refresh();
+
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
       const threshold = document

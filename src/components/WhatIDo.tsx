@@ -25,17 +25,14 @@ const WhatIDo = () => {
     };
   }, []);
   return (
-    <div className="whatIDO">
-      <div className="what-box">
-        <h2 className="title">
-          W<span className="hat-h2">HAT</span>
-          <div>
-            I<span className="do-h2"> DO</span>
-          </div>
+    <div className="whatIDO" style={{ flexDirection: "column", justifyContent: "center", alignItems: "flex-end", paddingRight: "10%" }}>
+      <div className="what-box" style={{ width: "auto", marginBottom: "40px" }}>
+        <h2 style={{ fontSize: "70px", fontWeight: 500, margin: "0", textAlign: "left" }}>
+          What <span style={{ color: "var(--accentColor)" }}>I Do</span>
         </h2>
       </div>
-      <div className="what-box">
-        <div className="what-box-in">
+      <div className="what-box" style={{ width: "auto", justifyContent: "flex-end", display: "flex" }}>
+        <div className="what-box-in" style={{ margin: "0" }}>
           <div className="what-border2">
             <svg width="100%">
               <line
@@ -87,24 +84,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>UI AUTOMATION</h3>
+              <h4>End-to-End Testing</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                Developing robust data-driven automation frameworks with Page Object Models to accelerate regression cycles and improve software stability.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Core Tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Playwright</div>
+                <div className="what-tags">Selenium</div>
+                <div className="what-tags">Appium</div>
+                <div className="what-tags">Java</div>
+                <div className="what-tags">Cucumber BDD</div>
+                <div className="what-tags">TestNG</div>
+                <div className="what-tags">JUnit</div>
+                <div className="what-tags">POM</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +122,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>API & BACKEND</h3>
+              <h4>Integration & Security</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Validating complex financial transactions, API responses, message queues, and ensuring CI/CD pipeline integration.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Core Tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">REST Assured</div>
+                <div className="what-tags">JMeter</div>
+                <div className="what-tags">Postman</div>
+                <div className="what-tags">RabbitMQ</div>
+                <div className="what-tags">Jenkins CI/CD</div>
+                <div className="what-tags">Kubernetes</div>
+                <div className="what-tags">JIRA & Agile</div>
+                <div className="what-tags">SQL Testing</div>
               </div>
               <div className="what-arrow"></div>
             </div>

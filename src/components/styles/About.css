@@ -24,10 +24,10 @@
 }
 
 .about-me p {
-  font-size: 33px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -56,11 +56,11 @@
   }
   .about-me {
     padding: 0px;
-    width: 50%;
+    width: 45%;
   }
   .about-me p {
-    font-size: 1.9vw;
-    line-height: 2.3vw;
+    font-size: 1.1vw;
+    line-height: 1.6vw;
   }
 }
 @media only screen and (min-width: 1950px) {

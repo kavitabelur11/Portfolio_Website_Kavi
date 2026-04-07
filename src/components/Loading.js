@@ -2,7 +2,8 @@ import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-run
 import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
-import Marquee from "react-fast-marquee";
+import FastMarquee from "react-fast-marquee";
+const Marquee = FastMarquee.default || FastMarquee;
 const Loading = ({ percent }) => {
     const { setIsLoading } = useLoading();
     const [loaded, setLoaded] = useState(false);

@@ -1,0 +1,17 @@
+# Query: .webp
+# ContextLines: 1
+
+8 results - 1 file
+
+src/components/TechStack.tsx:
+  16  const imageUrls = [
+  17:   "/images/react2.webp",
+  18:   "/images/next2.webp",
+  19:   "/images/node2.webp",
+  20:   "/images/express.webp",
+  21:   "/images/mongo.webp",
+  22:   "/images/mysql.webp",
+  23:   "/images/typescript.webp",
+  24:   "/images/javascript.webp",
+  
+  25  ];
